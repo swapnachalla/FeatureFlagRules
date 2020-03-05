@@ -5,7 +5,6 @@
         <jta-data-source>java:jboss/datasources/ExampleDS</jta-data-source>
         <class>com.Features</class>
         <class>com.myspace.mdp_rules.StrategyParameters</class>
-        <class>com.myspace.mdp_rules.Features</class>
         <class>com.myspace.mdp_rules.Feature</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
