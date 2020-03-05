@@ -4,7 +4,7 @@ package com.myspace.mdp_rules;
  */
 
 @javax.persistence.Entity
-public class Feature implements java.io.Serializable {
+public class Features implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
@@ -31,7 +31,7 @@ public class Feature implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Feature Minor Version")
 	private java.lang.String featureMinorVer;
 
-	public Feature() {
+	public Features() {
 	}
 
 	public int getFeatureId() {
@@ -91,7 +91,7 @@ public class Feature implements java.io.Serializable {
 		this.featureMinorVer = featureMinorVer;
 	}
 
-	public Feature(int featureId, java.lang.String featureName,
+	public Features(int featureId, java.lang.String featureName,
 			java.util.List<java.lang.String> featureEpic,
 			java.lang.String featureDesc,
 			java.util.List<java.lang.String> featureComponent,
