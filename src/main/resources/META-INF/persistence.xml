@@ -6,6 +6,7 @@
         <class>com.Features</class>
         <class>com.myspace.mdp_rules.StrategyParameters</class>
         <class>com.myspace.mdp_rules.Features</class>
+        <class>com.myspace.mdp_rules.Feature</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
