@@ -7,29 +7,103 @@ package com;
 @javax.persistence.Entity
 public class Features implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "FEATURES_ID_GENERATOR")
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(sequenceName = "FEATURES_ID_SEQ", name = "FEATURES_ID_GENERATOR")
-    private java.lang.Long id;
+	@org.kie.api.definition.type.Label(value = "featureId")
+	private int featureId;
 
-    public Features() {
-    }
-    
-    public Features(java.lang.Long id) {
-        this.id = id;
-    }
+	@org.kie.api.definition.type.Label(value = "Feature Name")
+	private java.lang.String featureName;
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+	@javax.persistence.ElementCollection(fetch = javax.persistence.FetchType.EAGER)
+	@org.kie.api.definition.type.Label(value = "Feature Epic")
+	private java.util.List<java.lang.String> featureEpic;
 
+	@org.kie.api.definition.type.Label(value = "Feature Description")
+	private java.lang.String featureDesc;
 
+	@javax.persistence.ElementCollection(fetch = javax.persistence.FetchType.EAGER)
+	@org.kie.api.definition.type.Label(value = "Feature Component")
+	private java.util.List<java.lang.String> featureComponent;
 
+	@org.kie.api.definition.type.Label(value = "Feature Major Version")
+	private java.lang.String featureMajorVer;
+
+	@org.kie.api.definition.type.Label(value = "Feature Minor Version")
+	private java.lang.String featureMinorVer;
+
+	public Features() {
+	}
+
+	public int getFeatureId() {
+		return this.featureId;
+	}
+
+	public void setFeatureId(int featureId) {
+		this.featureId = featureId;
+	}
+
+	public java.lang.String getFeatureName() {
+		return this.featureName;
+	}
+
+	public void setFeatureName(java.lang.String featureName) {
+		this.featureName = featureName;
+	}
+
+	public java.util.List<java.lang.String> getFeatureEpic() {
+		return this.featureEpic;
+	}
+
+	public void setFeatureEpic(java.util.List<java.lang.String> featureEpic) {
+		this.featureEpic = featureEpic;
+	}
+
+	public java.lang.String getFeatureDesc() {
+		return this.featureDesc;
+	}
+
+	public void setFeatureDesc(java.lang.String featureDesc) {
+		this.featureDesc = featureDesc;
+	}
+
+	public java.util.List<java.lang.String> getFeatureComponent() {
+		return this.featureComponent;
+	}
+
+	public void setFeatureComponent(
+			java.util.List<java.lang.String> featureComponent) {
+		this.featureComponent = featureComponent;
+	}
+
+	public java.lang.String getFeatureMajorVer() {
+		return this.featureMajorVer;
+	}
+
+	public void setFeatureMajorVer(java.lang.String featureMajorVer) {
+		this.featureMajorVer = featureMajorVer;
+	}
+
+	public java.lang.String getFeatureMinorVer() {
+		return this.featureMinorVer;
+	}
+
+	public void setFeatureMinorVer(java.lang.String featureMinorVer) {
+		this.featureMinorVer = featureMinorVer;
+	}
+
+	public Features(int featureId, java.lang.String featureName,
+			java.util.List<java.lang.String> featureEpic,
+			java.lang.String featureDesc,
+			java.util.List<java.lang.String> featureComponent,
+			java.lang.String featureMajorVer, java.lang.String featureMinorVer) {
+		this.featureId = featureId;
+		this.featureName = featureName;
+		this.featureEpic = featureEpic;
+		this.featureDesc = featureDesc;
+		this.featureComponent = featureComponent;
+		this.featureMajorVer = featureMajorVer;
+		this.featureMinorVer = featureMinorVer;
+	}
 
 }
