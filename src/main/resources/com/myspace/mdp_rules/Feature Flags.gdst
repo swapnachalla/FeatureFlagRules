@@ -12,6 +12,33 @@
   <attributeCols/>
   <conditionPatterns>
     <Pattern52>
+      <factType>Features</factType>
+      <boundName>FeatureName</boundName>
+      <isNegated>false</isNegated>
+      <conditions>
+        <condition-column52>
+          <typedDefaultValue>
+            <valueString></valueString>
+            <dataType>STRING</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>false</hideColumn>
+          <width>100</width>
+          <header>Feature Name</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>featureName</factField>
+          <fieldType>String</fieldType>
+          <operator>in</operator>
+          <parameters/>
+          <binding>$featureName</binding>
+        </condition-column52>
+      </conditions>
+      <window>
+        <parameters/>
+      </window>
+      <entryPointName>Feature Stream</entryPointName>
+    </Pattern52>
+    <Pattern52>
       <factType>StrategyParameters</factType>
       <boundName>Strategy</boundName>
       <isNegated>false</isNegated>
@@ -73,6 +100,22 @@
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
           <width>100</width>
+          <header>User ID</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>userId</factField>
+          <fieldType>Integer</fieldType>
+          <operator>in</operator>
+          <parameters/>
+          <binding>$userId</binding>
+        </condition-column52>
+        <condition-column52>
+          <typedDefaultValue>
+            <valueString></valueString>
+            <dataType>STRING</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>false</hideColumn>
+          <width>100</width>
           <header>State Code</header>
           <constraintValueType>1</constraintValueType>
           <factField>state</factField>
@@ -89,13 +132,13 @@
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
           <width>100</width>
-          <header>User ID</header>
+          <header>Labeler Code(NDC1)</header>
           <constraintValueType>1</constraintValueType>
-          <factField>userId</factField>
-          <fieldType>Integer</fieldType>
-          <operator>in</operator>
+          <factField>ndc1_cd</factField>
+          <fieldType>Collection</fieldType>
+          <operator>==</operator>
           <parameters/>
-          <binding>$userId</binding>
+          <binding>$ndc1</binding>
         </condition-column52>
       </conditions>
       <window>
@@ -144,6 +187,16 @@
         <valueNumeric class="int">1</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
