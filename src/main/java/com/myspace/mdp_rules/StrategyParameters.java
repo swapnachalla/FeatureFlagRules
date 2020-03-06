@@ -22,21 +22,21 @@ public class StrategyParameters implements java.io.Serializable {
 	@javax.persistence.ElementCollection(fetch = javax.persistence.FetchType.EAGER)
 	private java.util.List<java.lang.String> permissionName;
 
-	@org.kie.api.definition.type.Label("Labeler Code")
-	@javax.persistence.ElementCollection(fetch = javax.persistence.FetchType.EAGER)
-	private java.util.List<java.lang.String> ndc1_cd;
-
 	@org.kie.api.definition.type.Label("State Code")
 	@javax.persistence.ElementCollection(fetch = javax.persistence.FetchType.EAGER)
 	private java.util.List<java.lang.String> state;
 
+	@org.kie.api.definition.type.Label("Release Name")
 	@javax.persistence.ElementCollection(fetch = javax.persistence.FetchType.EAGER)
-	@org.kie.api.definition.type.Label(value = "Release Name")
 	private java.util.List<java.lang.String> releaseName;
 
+	@org.kie.api.definition.type.Label("User ID")
 	@javax.persistence.ElementCollection(fetch = javax.persistence.FetchType.EAGER)
-	@org.kie.api.definition.type.Label(value = "User ID")
 	private java.util.List<java.lang.String> userId;
+
+	@javax.persistence.ElementCollection(fetch = javax.persistence.FetchType.EAGER)
+	@org.kie.api.definition.type.Label(value = "User Group")
+	private java.util.List<java.lang.String> usergroup;
 
 	public StrategyParameters() {
 	}
@@ -66,14 +66,6 @@ public class StrategyParameters implements java.io.Serializable {
 		this.permissionName = permissionName;
 	}
 
-	public java.util.List<java.lang.String> getNdc1_cd() {
-		return this.ndc1_cd;
-	}
-
-	public void setNdc1_cd(java.util.List<java.lang.String> ndc1_cd) {
-		this.ndc1_cd = ndc1_cd;
-	}
-
 	public java.util.List<java.lang.String> getState() {
 		return this.state;
 	}
@@ -98,20 +90,28 @@ public class StrategyParameters implements java.io.Serializable {
 		this.userId = userId;
 	}
 
+	public java.util.List<java.lang.String> getUsergroup() {
+		return this.usergroup;
+	}
+
+	public void setUsergroup(java.util.List<java.lang.String> usergroup) {
+		this.usergroup = usergroup;
+	}
+
 	public StrategyParameters(java.lang.Long id,
 			java.util.List<java.lang.String> roleName,
 			java.util.List<java.lang.String> permissionName,
-			java.util.List<java.lang.String> ndc1_cd,
 			java.util.List<java.lang.String> state,
 			java.util.List<java.lang.String> releaseName,
-			java.util.List<java.lang.String> userId) {
+			java.util.List<java.lang.String> userId,
+			java.util.List<java.lang.String> usergroup) {
 		this.id = id;
 		this.roleName = roleName;
 		this.permissionName = permissionName;
-		this.ndc1_cd = ndc1_cd;
 		this.state = state;
 		this.releaseName = releaseName;
 		this.userId = userId;
+		this.usergroup = usergroup;
 	}
 
 }
