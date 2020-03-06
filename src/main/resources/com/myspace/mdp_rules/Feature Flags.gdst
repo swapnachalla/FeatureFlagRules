@@ -89,7 +89,7 @@
           <operator>==</operator>
           <valueList>Admins, Power Users, Developers, Beta Testers</valueList>
           <parameters/>
-          <binding>$ndc1</binding>
+          <binding>$usergroup</binding>
         </condition-column52>
         <condition-column52>
           <typedDefaultValue>
@@ -138,7 +138,7 @@
           <factField>userId</factField>
           <fieldType>Integer</fieldType>
           <operator>in</operator>
-          <valueList>User1,User2,User3</valueList>
+          <valueList>1 , 2 , 3</valueList>
           <parameters/>
           <binding>$userId</binding>
         </condition-column52>
@@ -381,7 +381,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString>1,2</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
