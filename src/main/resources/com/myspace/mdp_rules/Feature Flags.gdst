@@ -206,17 +206,17 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>DUR Features </valueString>
+        <valueString>Feature 1</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>DUR_State_User_Access</valueString>
+        <valueString>Feature 1</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString>R1-DUR-PROD</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
