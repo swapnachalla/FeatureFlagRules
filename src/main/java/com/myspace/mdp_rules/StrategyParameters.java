@@ -14,26 +14,29 @@ public class StrategyParameters implements java.io.Serializable {
 	@javax.persistence.SequenceGenerator(sequenceName = "STRATEGYPARAMETERS_ID_SEQ", name = "STRATEGYPARAMETERS_ID_GENERATOR")
 	private java.lang.Long id;
 
-	@org.kie.api.definition.type.Label(value = "Release Name")
-	private java.lang.String releaseName;
-
-	@org.kie.api.definition.type.Label(value = "State Code")
-	private java.lang.String state;
-
+	@org.kie.api.definition.type.Label("Role Name")
 	@javax.persistence.ElementCollection(fetch = javax.persistence.FetchType.EAGER)
-	@org.kie.api.definition.type.Label(value = "Role Name")
 	private java.util.List<java.lang.String> roleName;
 
+	@org.kie.api.definition.type.Label("Permission Name")
 	@javax.persistence.ElementCollection(fetch = javax.persistence.FetchType.EAGER)
-	@org.kie.api.definition.type.Label(value = "Permission Name")
 	private java.util.List<java.lang.String> permissionName;
 
+	@org.kie.api.definition.type.Label("Labeler Code")
 	@javax.persistence.ElementCollection(fetch = javax.persistence.FetchType.EAGER)
-	@org.kie.api.definition.type.Label(value = "Labeler Code")
 	private java.util.List<java.lang.String> ndc1_cd;
 
+	@org.kie.api.definition.type.Label("State Code")
+	@javax.persistence.ElementCollection(fetch = javax.persistence.FetchType.EAGER)
+	private java.util.List<java.lang.String> state;
+
+	@javax.persistence.ElementCollection(fetch = javax.persistence.FetchType.EAGER)
+	@org.kie.api.definition.type.Label(value = "Release Name")
+	private java.util.List<java.lang.String> releaseName;
+
+	@javax.persistence.ElementCollection(fetch = javax.persistence.FetchType.EAGER)
 	@org.kie.api.definition.type.Label(value = "User ID")
-	private int userId;
+	private java.util.List<java.lang.String> userId;
 
 	public StrategyParameters() {
 	}
@@ -44,22 +47,6 @@ public class StrategyParameters implements java.io.Serializable {
 
 	public void setId(java.lang.Long id) {
 		this.id = id;
-	}
-
-	public java.lang.String getReleaseName() {
-		return this.releaseName;
-	}
-
-	public void setReleaseName(java.lang.String releaseName) {
-		this.releaseName = releaseName;
-	}
-
-	public java.lang.String getState() {
-		return this.state;
-	}
-
-	public void setState(java.lang.String state) {
-		this.state = state;
 	}
 
 	public java.util.List<java.lang.String> getRoleName() {
@@ -87,24 +74,43 @@ public class StrategyParameters implements java.io.Serializable {
 		this.ndc1_cd = ndc1_cd;
 	}
 
-	public int getUserId() {
+	public java.util.List<java.lang.String> getState() {
+		return this.state;
+	}
+
+	public void setState(java.util.List<java.lang.String> state) {
+		this.state = state;
+	}
+
+	public java.util.List<java.lang.String> getReleaseName() {
+		return this.releaseName;
+	}
+
+	public void setReleaseName(java.util.List<java.lang.String> releaseName) {
+		this.releaseName = releaseName;
+	}
+
+	public java.util.List<java.lang.String> getUserId() {
 		return this.userId;
 	}
 
-	public void setUserId(int userId) {
+	public void setUserId(java.util.List<java.lang.String> userId) {
 		this.userId = userId;
 	}
 
-	public StrategyParameters(java.lang.Long id, java.lang.String releaseName,
-			java.lang.String state, java.util.List<java.lang.String> roleName,
+	public StrategyParameters(java.lang.Long id,
+			java.util.List<java.lang.String> roleName,
 			java.util.List<java.lang.String> permissionName,
-			java.util.List<java.lang.String> ndc1_cd, int userId) {
+			java.util.List<java.lang.String> ndc1_cd,
+			java.util.List<java.lang.String> state,
+			java.util.List<java.lang.String> releaseName,
+			java.util.List<java.lang.String> userId) {
 		this.id = id;
-		this.releaseName = releaseName;
-		this.state = state;
 		this.roleName = roleName;
 		this.permissionName = permissionName;
 		this.ndc1_cd = ndc1_cd;
+		this.state = state;
+		this.releaseName = releaseName;
 		this.userId = userId;
 	}
 
