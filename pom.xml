@@ -3,11 +3,11 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.myspace</groupId>
-  <artifactId>MDP_Rules</artifactId>
+  <artifactId>FeatureFlag_Rules</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>kjar</packaging>
-  <name>MDP_Rules</name>
-  <description>MDP Business Rules</description>
+  <name>Feature Flag Rules</name>
+  <description>Generic rules that could enable features in any application</description>
   <dependencies>
     <dependency>
       <groupId>com.thoughtworks.xstream</groupId>
