@@ -138,7 +138,7 @@
           <factField>userId</factField>
           <fieldType>Integer</fieldType>
           <operator>in</operator>
-          <valueList></valueList>
+          <valueList>User1,User2,User3</valueList>
           <parameters/>
           <binding>$userId</binding>
         </condition-column52>
@@ -381,7 +381,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1,2</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
