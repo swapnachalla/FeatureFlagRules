@@ -68,7 +68,7 @@
           <header>Release Name</header>
           <constraintValueType>1</constraintValueType>
           <factField>releaseName</factField>
-          <fieldType>String</fieldType>
+          <fieldType>Collection</fieldType>
           <operator>==</operator>
           <valueList>Release 1.0,Release 1.1</valueList>
           <parameters/>
@@ -84,7 +84,7 @@
           <width>100</width>
           <header>User Groups</header>
           <constraintValueType>1</constraintValueType>
-          <factField>ndc1_cd</factField>
+          <factField>usergroup</factField>
           <fieldType>Collection</fieldType>
           <operator>==</operator>
           <valueList>Admins, Power Users, Developers, Beta Testers</valueList>
@@ -136,7 +136,7 @@
           <header>Users</header>
           <constraintValueType>1</constraintValueType>
           <factField>userId</factField>
-          <fieldType>Integer</fieldType>
+          <fieldType>Collection</fieldType>
           <operator>in</operator>
           <valueList>1 , 2 , 3</valueList>
           <parameters/>
@@ -153,7 +153,7 @@
           <header>State Code</header>
           <constraintValueType>1</constraintValueType>
           <factField>state</factField>
-          <fieldType>String</fieldType>
+          <fieldType>Collection</fieldType>
           <operator>in</operator>
           <valueList>VA, MD, NY, DC</valueList>
           <parameters/>
@@ -246,7 +246,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Admins</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -306,7 +306,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Power Users</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -426,7 +426,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Beta Testers</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -486,7 +486,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Admins</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
