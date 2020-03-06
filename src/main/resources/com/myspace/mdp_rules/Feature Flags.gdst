@@ -225,7 +225,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Feature 1.0 for release 1</valueString>
+        <valueString>Release 1.0 for admins</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -285,7 +285,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Feature 1.1 for MD state</valueString>
+        <valueString>For MD state power users</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -345,7 +345,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Feature 1.2 for limited users</valueString>
+        <valueString>For limited users</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -405,7 +405,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Feature 1.3 for permissions</valueString>
+        <valueString>Beta testers with execute permissions </valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -426,12 +426,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString>Beta Testers</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Beta Tester Read only</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
