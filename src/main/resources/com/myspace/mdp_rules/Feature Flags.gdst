@@ -381,7 +381,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>User1</valueString>
+        <valueString>1</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -501,7 +501,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>User3</valueString>
+        <valueString>3</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
