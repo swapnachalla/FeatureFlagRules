@@ -31,9 +31,6 @@ public class Features implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Feature Minor Version")
 	private java.lang.String featureMinorVer;
 
-	@org.kie.api.definition.type.Label(value = "Enabled")
-	private java.lang.Boolean isEnabled;
-
 	public Features() {
 	}
 
@@ -94,20 +91,11 @@ public class Features implements java.io.Serializable {
 		this.featureMinorVer = featureMinorVer;
 	}
 
-	public java.lang.Boolean getIsEnabled() {
-		return this.isEnabled;
-	}
-
-	public void setIsEnabled(java.lang.Boolean isEnabled) {
-		this.isEnabled = isEnabled;
-	}
-
 	public Features(int featureId, java.lang.String featureName,
 			java.util.List<java.lang.String> featureEpic,
 			java.lang.String featureDesc,
 			java.util.List<java.lang.String> featureComponent,
-			java.lang.String featureMajorVer, java.lang.String featureMinorVer,
-			java.lang.Boolean isEnabled) {
+			java.lang.String featureMajorVer, java.lang.String featureMinorVer) {
 		this.featureId = featureId;
 		this.featureName = featureName;
 		this.featureEpic = featureEpic;
@@ -115,7 +103,6 @@ public class Features implements java.io.Serializable {
 		this.featureComponent = featureComponent;
 		this.featureMajorVer = featureMajorVer;
 		this.featureMinorVer = featureMinorVer;
-		this.isEnabled = isEnabled;
 	}
 
 }
